@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Kombat</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+    <div class="app" id="app">
+        <header class="header">
+            <a href="/" class="logo">
+                <img class="logo-image" src="./img/logo.svg" alt="logo: Кинопульс">
+            </a>
+            <a href="#" class="user">
+                <span class="user-name">Olena</span>
+                <img src="./img/avatar.jpg" alt="user avatar" class="user-photo">
+            </a>
+        </header>
+        <section class="film">
+            <img src="./img/film-logo.png" alt="Mortal Kombat" class="film-logo">
+            <div class="tags">
+                <span class="date">2021</span>
+                <span class="genre">боевик, фэнтези, фантастика</span>
+                <span class="country">США</span>
+                <span class="age">18+</span>
+            </div>
+            <!-- /.tags -->
+            <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва,
+                где останется только сильнейший</p>
+            <div class="button__group">
+                <a data-fancybox data-src="#hidden-content" class="button button__primary">Предзаказ фильма</a>
+                <button class="button button__default">
+                    <img src="./img/play.svg" alt="icon: play" class="button__icon">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button__text">Смотреть трейлер</a>
+                </button>
+            </div>
+            <div class="modal"  id="hidden-content">
+                <form action="#">
+                    <label>
+                        Enter your email to subscribe:
+                        <input type="email" name="subscribe">
+                    </label>
+                    <button class="button submit" type="submit">Subscribe</button>
+                </form>
+            </div>
+            <!-- /.modal -->
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.vide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
